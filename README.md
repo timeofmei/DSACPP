@@ -19,6 +19,11 @@ sudo chmod +x ./run.py
 ```shell
 ./run.py fib.cpp 30
 ```
+或
+
+```shell
+./run.py fib 30  # 省略扩展
+```
 
 `run.py`将在repo目录下自动查找源文件（如果有重名源文件，则取第一个）并编译运行。命令行参数将会被传递。
 

@@ -20,6 +20,8 @@ def main():
         print("usage: ./run.py [filename] [args...]\nfull path is not needed")
         stop()
     filename = sys.argv[1]
+    if not filename.endswith(".cpp"):
+        filename = filename + ".cpp"
     filename_without_ext = filename.split(".")[0]
 
     if len(sys.argv) > 2:
