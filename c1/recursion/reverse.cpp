@@ -13,7 +13,8 @@ void reverse(int A[], int lo, int hi)
 int main()
 {
     int A[]{1, 2, 3, 4, 5, 6, 7};
-    printList(A);
-    reverse(A, 0, sizeof(A) / sizeof(int) - 1);
-    printList(A);
+    int size = sizeof(A) / sizeof(int);
+    printList(A, size);
+    reverse(A, 0, size - 1);
+    printList(A, size);
 }

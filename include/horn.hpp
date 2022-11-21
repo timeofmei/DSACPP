@@ -4,10 +4,10 @@
 #include <iostream>
 
 template<typename T>
-void printList(T A[])
+void printList(T A[], int size)
 {
-    for (T a: A)
-        std::cout << a << ' ';
+    for (int i = 0; i < size; i++)
+        std::cout << A[i] << ' ';
     std::cout << std::endl;
 }
 
