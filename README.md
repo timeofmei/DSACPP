@@ -2,7 +2,7 @@
 
 本repo为本人在学习[邓俊辉](https://dsa.cs.tsinghua.edu.cn/~deng/)老师《[数据结构](https://dsa.cs.tsinghua.edu.cn/~deng/ds/mooc/)》课中，根据老师讲述与[书内](https://dsa.cs.tsinghua.edu.cn/~deng/ds/dsacpp/)代码，移除Visual Studio依赖（以方便*NIX系统使用者运行源代码），并对目录结构加以调整的代码仓库。
 
-本repo所有C++代码版权归属原作者。
+本repo所有C++代码版权归属原作者，但不完全与老师代码一致，在具体实现细节上我会适当做调整。
 
 # 用法
 
