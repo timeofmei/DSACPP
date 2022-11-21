@@ -19,5 +19,6 @@ long fibI(long n)
 int main(int argc, char** argv)
 {
     int num = std::stoi(argv[1]);
-    std::cout << fib(num) << std::endl;
+    for (int i = 0; i <= num; i++)
+        std::cout << "Fib(" << i << "): " << fibI(i) << std::endl;
 }
