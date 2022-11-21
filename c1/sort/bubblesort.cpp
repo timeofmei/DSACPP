@@ -1,4 +1,4 @@
-#include <iostream>
+#include "horn.hpp"
 #include "magic.hpp"
 
 void bubblesort1A(int A[], int n)
@@ -23,11 +23,7 @@ int main()
 {
     int A[] = {5, 2, 7, 4, 6, 3, 1};
     int size = sizeof(A) / sizeof(int);
-    for (int num: A)
-        std::cout << num << ' ';
-    std::cout << std::endl;
+    printList(A);
     bubblesort1A(A, size);
-    for (int num: A)
-        std::cout << num << ' ';
-    std::cout << std::endl;
+    printList(A);
 }

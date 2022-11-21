@@ -10,17 +10,19 @@ CPP_COMPILER = "g++"
 CPP_STANDARD = "c++20"
 TIME_PRECISION = 4
 
+
 def stop():
     sys.exit(1)
 
+
 def main():
-    if (len(sys.argv) < 2):
+    if len(sys.argv) < 2:
         print("usage: ./run.py [filename] [args...]\nfull path is not needed")
         stop()
     filename = sys.argv[1]
     filename_without_ext = filename.split(".")[0]
 
-    if (len(sys.argv) > 2):
+    if len(sys.argv) > 2:
         args = sys.argv[2:]
     else:
         args = []
@@ -57,6 +59,7 @@ def main():
     print(f"running time: {round(elapsed, TIME_PRECISION)}s")
 
     subprocess.run(["rm", f"./{filename_without_ext}"])
+
 
 if __name__ == "__main__":
     main()
