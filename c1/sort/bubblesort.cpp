@@ -23,7 +23,7 @@ int main()
 {
     int A[] = {5, 2, 7, 4, 6, 3, 1};
     int size = sizeof(A) / sizeof(int);
-    printList(A);
+    printList(A, size);
     bubblesort1A(A, size);
-    printList(A);
+    printList(A, size);
 }
