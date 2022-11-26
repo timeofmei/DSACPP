@@ -11,7 +11,7 @@ void bubblesort1A(int A[], int n)
         {
             if (A[i - 1] > A[i])
             {
-                swap(A + i - 1, A + i);
+                swap(A[i - 1], A[i]);
                 sorted = false;
             }
         }

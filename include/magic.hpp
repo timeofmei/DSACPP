@@ -2,11 +2,11 @@
 #define MAGIC_H
 
 template<typename T>
-void swap(T* a, T* b)
+void swap(T &a, T &b)
 {
-    T tmp = *a;
-    *a = *b;
-    *b = tmp;
+    T tmp = a;
+    a = b;
+    b = tmp;
 }
 
 template<typename T>
@@ -14,7 +14,7 @@ void reverse(T A[], int lo, int hi)
 {
     if (lo < hi)
     {
-        swap(A + lo, A + hi);
+        swap(A[lo], A[hi]);
         reverse(A, lo + 1, hi - 1);
     }
 }
